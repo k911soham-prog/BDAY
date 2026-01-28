@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Happy Birthday 🎂</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<audio id="bgMusic" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<button id="musicToggle">🔊</button>
+
+<div id="app">
+
+  <!-- LANDING -->
+  <section class="screen active" id="screen1">
+    <h1>Hey 👋</h1>
+    <p>I made something small for today.</p>
+    <button onclick="start()">Start 🎈</button>
+  </section>
+
+  <!-- PUZZLE -->
+  <section class="screen" id="screen2">
+    <h2>Put the pieces together 🧩</h2>
+    <div id="puzzle-container">
+    <div id="puzzle"></div>
+    <div id="pieces"></div>
+  </div>
+  </section>
+    <section class="screen" id="screen-success">
+    <h2>Yay! You did it 💖</h2>
+    <p>Just one more little thing…</p>
+    <button onclick="show(3)">Next ✨</button>
+  </section>
+  <!-- SLIDES -->
+  <section class="screen" id="screen3">
+  <img id="slideImg" src="slides/1.jpg">
+  <p id="slideText"></p>
+  <div class="controls">
+    <button onclick="prev()">←</button>
+    <button onclick="next()">→</button>
+    <button id="finishBtn" onclick="show(4)" style="display:none;">Next 🎉</button>
+  </div>
+  </section>
+
+  <!-- FINAL -->
+  <section class="screen" id="screen4">
+  <h2>That’s all 🙂</h2>
+  <p>I just wanted to wish you a really happy birthday.</p>
+  <button onclick="showCard()">Open your card 🎉</button>
+  <div id="card" style="display:none; margin-top:20px; padding:20px; border:2px solid #ff69b4; border-radius:12px; background:#fff0f5;">
+    <h3>Happy Birthday [Name]!</h3>
+    <p>Hope your day is filled with happiness and cake 🍰</p>
+  </div>
+</section>
+
+</div>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<div id="puzzlePopup">
+  <img src="puzzle.jpg" alt="Surprise">
+</div>
+</body>
+</html>
