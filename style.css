@@ -132,7 +132,7 @@ button:hover {
 .piece {
   width: 100px;
   height: 100px;
-  background-image: url("puzzle.jpg");
+  background-image: url("don.jpg");
   background-size: 300px 300px;
   background-repeat: no-repeat;
   border-radius: 14px;
@@ -451,4 +451,5 @@ body::after {
     transform: translateY(-120px) scale(1.05);
     opacity: 0;
   }
+
 }
