@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
   <meta charset="UTF-8" />
   <title>Happy Birthday 🎂</title>
   <link rel="stylesheet" href="style.css" />
@@ -53,19 +55,27 @@
   <p>I just wanted to wish you a really happy birthday.</p>
   <button onclick="showCard()">Open your card 🎉</button>
   <div id="card" style="display:none; margin-top:20px; padding:20px; border:2px solid #ff69b4; border-radius:12px; background:#fff0f5;">
-    <h3>Happy Birthday [Name]!</h3>
+    <h3>Happy Birthday Anandi!</h3>
     <p>Hope your day is filled with happiness and cake 🍰</p>
   </div>
 </section>
 
 </div>
 
-<script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 <div id="puzzlePopup">
-  <img src="puzzle.jpg" alt="Surprise">
+  <img src="puzzle.png" alt="Surprise">
 </div>
+<!-- GIFT OVERLAY -->
+<div id="giftOverlay">
+  <div id="giftBox"></div>
+
+  <img id="brainImg" src="brain.png" alt="Brain">
+
+  <p id="brainText">
+    Congrats! You finally have it after 17 years 🧠🎉
+  </p>
+</div>
+<script src="script.js"></script>
 </body>
-
 </html>
-
